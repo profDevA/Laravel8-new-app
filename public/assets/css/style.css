@@ -1,0 +1,285 @@
+
+/* General Style */
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+
+
+.form-control {
+    background-color: #f2f2f2;
+    border-color: #969696;
+}
+
+/* Bootstrap toggle button */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Sidebar */
+.avatar [class*=avatar-status-] {
+    width: 13px;
+    height: 13px;
+    right: 7px;
+    bottom: 7px;
+}
+
+/* Main Content */
+.main-content {
+    padding-top: 2rem;
+}
+
+/* Hide default HTML checkbox */
+.chatbot-page .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.chatbot-page .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.chatbot-page .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.chatbot-page input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.chatbot-page input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.chatbot-page input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.chatbot-page .slider.round {
+    border-radius: 34px;
+}
+
+.chatbot-page .slider.round:before {
+    border-radius: 50%;
+}
+
+/* Nav Bar */
+.navbar {
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0px 10px 11px 2px rgb(220 219 220);
+    -moz-box-shadow: 0px 10px 11px 2px rgb(220 219 220);
+    box-shadow: 0px 10px 11px 2px rgb(220 219 220);
+}
+
+.navbar .navbar-nav .page-title {
+    margin: .5rem 0;
+}
+
+.app-sidebar .logo-img {
+    width: 90%;
+    display: inline-block;
+    max-height: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar-header .logo-img img {
+    width: 100%;
+}
+
+i.icon-chatbot svg {
+    fill: white;
+    width: 22px;
+    margin-bottom: 5px;
+}
+
+/* Avatar */
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar-header .avatar {
+    z-index: 4;
+}
+
+.avatar.avatar-md .avatar-content, .avatar.avatar-md img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-header .avatar-wrapper {
+    max-width: 110px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar-header .avatar-wrapper h3 {
+    z-index: 4;
+}
+
+/* Sections */
+section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section .home-item {
+    background-color: #f7f7f7;
+}
+
+.home-page .counter {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.home-page .counter div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-page .counter .left {
+    background-color: #07465a;
+}
+
+.home-page .counter .right {
+    background-color: #0B5E79;
+}
+
+
+/* Send page template select  */
+.send-page .template-select fieldset {
+    display: inline;
+    width: 300px;
+}
+
+.frame {
+    border: 1px solid #919191;
+    padding: 30px 15px;
+    position: relative;
+}
+
+.frame .frame-title {
+    position: absolute;
+    background-color: #eaeaea;
+    top: -18px;
+    left: 13px;
+    padding: 6px;
+}
+
+.chatbot-page .bottom-button-group .arrow-up-down {
+    width: 40px;
+    height: 40px;
+    margin-right: .5rem;
+}
+
+.chatbot-page .bottom-button-group .right-top .form-control {
+    width: 240px;
+}
+
+.chatbot-page .form-control {
+    background-color: white;
+}
+/* Tags page*/
+.tags-page .tags-wrapper {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.tags-page .tags-wrapper .tags-middle {
+    width: 120px;
+}
+
+.tags-page .tags-wrapper .tags-left, .tags-page .tags-wrapper .tags-right {
+    flex: 1;
+    width: calc(50% - 60px);
+}
+
+.tags-page .tags-wrapper .tags-left .form-control {
+    max-width: 120px;
+}
+
+/* Options page */
+.option-container {
+    margin-top: 30px;
+}
+.option-container .slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+.input-span {
+    width: 100px;
+}
+
+/* The slider itself */
+.option-container .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.option-container .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.option-container .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.option-container .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .chatbot-page .arrow-up-down button {
+        text-align: center;
+    }
+}
